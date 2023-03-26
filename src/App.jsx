@@ -31,17 +31,6 @@ const Layout = ({ visibility }) => {
     pointerEvents: !visibility ? "auto" : "none",
     cursor: !visibility ? "pointer" : "default",
   });
-  // const dis = () => {
-  //   if(visibility){
-  //     return {
-  //       pointerEvents: 'none',
-  //       cursor: 'default'
-  //     }
-  //   }else {
-  //     return ""
-  //   }
-  // }
-  console.log("visibility", visibility);
 
   return (
     <>

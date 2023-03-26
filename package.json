@@ -1,13 +1,16 @@
 {
-  "name": "react_boilerplate_code",
+  "name": "multiple_end_point",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "graphql-hooks": "^6.2.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
